@@ -1,0 +1,19 @@
+physical_path=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/real pool/slots/1/project
+registry_path=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/registry pool/slots/1/project
+recorded_worktree=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/registry pool/slots/1/project
+inode_physical=16777234:78866880
+inode_registry=16777234:78866880
+physical_spelling_return_rc=1
+physical_spelling_return: worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/real pool/slots/1/project is not managed by treehouse
+fm_teardown_rc=0
+teardown: returned /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/registry pool/slots/1/project
+teardown: teardown task-x1 complete (window firstmate:fm-task-x1, worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/registry pool/slots/1/project)
+teardown: Backlog: task-x1 just finished (this home keeps no markdown backlog at /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/data/backlog.md). Update /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.I3Msg4/symlinked-treehouse-teardown/data/backlog.md - move task-x1 to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+teardown: ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+teardown: ●  WATCHER DOWN - SUPERVISION IS OFF
+teardown: ●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 1s ago).
+teardown: ●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+teardown: ●  This is a supervision warning only; the guarded operation WILL still run.
+teardown: ●  repair missing watcher supervision according to the session-start block for this harness; do not use shell &.
+teardown: ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+postcondition=task metadata removed after accepted registry-path return

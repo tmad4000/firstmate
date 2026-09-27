@@ -1,0 +1,10 @@
+Preparing worktree (new branch 'project')
+HEAD is now at c05797a initial
+ok - a spaced symlinked Treehouse slot records a path that treehouse accepts for return
+Preparing worktree (new branch 'project')
+HEAD is now at 3c0c758 initial
+ok - an unmanaged Treehouse slot is refused at spawn time
+Preparing worktree (new branch 'project')
+HEAD is now at 31a96fa initial
+ok - an unavailable Treehouse registry is refused before task state is published
+# all fm-spawn-treehouse-symlink tests passed
