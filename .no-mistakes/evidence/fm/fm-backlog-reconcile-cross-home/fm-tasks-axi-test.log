@@ -1,0 +1,15 @@
+ok - bootstrap reports a regular code-root backlog and stays silent for a link into the home or no copy
+ok - bootstrap reports a code-root backlog linked elsewhere and a forked archive
+ok - bootstrap stays silent when the code root is the home
+ok - another checkout's bootstrap stays silent for a home that is its own checkout
+ok - a home's own .tasks.toml does not hide a code-root fork
+ok - the code-root remedy never moves a durably identified home's records
+ok - a stray code-root backlog with no durable home identity keeps its move-aside remedy
+ok - the code-root remedy never moves an ancestor home's records
+ok - a parent chain that cannot be followed never produces the move-aside remedy
+ok - bare tasks-axi replaced the code-root link and bootstrap reported the fork
+ok - fm-tasks-axi.sh writes, holds, archives, and reads relative body files through to the home from the code root
+ok - fm-tasks-axi.sh pins the home's backlog over an ambient TASKS_AXI_FILE and serves the dashboard
+ok - fm-tasks-axi.sh refuses caller --file, a symlinked home backlog, and an unresolvable home
+ok - fm-tasks-axi.sh refuses add --start while plain add and start <id> pass through
+ok - fm-tasks-axi.sh keeps the single-home layout addressing its own code-root backlog

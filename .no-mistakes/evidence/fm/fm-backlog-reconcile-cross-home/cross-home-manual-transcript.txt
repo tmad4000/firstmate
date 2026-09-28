@@ -1,0 +1,15 @@
+== AFTER (target 5ee029b): main checkout bootstrap, FM_HOME=mate checkout
+(no BACKLOG_RECONCILE lines)
+== mate's own bootstrap
+(no BACKLOG_RECONCILE lines)
+== BEFORE (base 29213a0): main checkout bootstrap, FM_HOME=mate checkout
+BACKLOG_RECONCILE: code-root <tmp>/main/data/backlog.md is not this home's <tmp>/mate/data/backlog.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+BACKLOG_RECONCILE: code-root <tmp>/main/data/done-archive.md is not this home's <tmp>/mate/data/done-archive.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+== main backlog untouched:
+## In flight
+
+## Queued
+
+- [ ] main-1: main home row
+
+## Done
