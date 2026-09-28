@@ -1,0 +1,18 @@
+=== BASE fa48367 (before fix) ===
+$ FM_HOME=<mate> <main>/bin/fm-bootstrap.sh | grep BACKLOG_RECONCILE
+BACKLOG_RECONCILE: code-root /var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/tmp.wIWu4Ai5YC/main/data/backlog.md is not this home's /var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/tmp.wIWu4Ai5YC/mate/data/backlog.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+BACKLOG_RECONCILE: code-root /var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/tmp.wIWu4Ai5YC/main/data/done-archive.md is not this home's /var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/tmp.wIWu4Ai5YC/mate/data/done-archive.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+--- mate from its own root:
+main backlog still intact:
+## Queued
+
+- [ ] main-1: main row
+
+=== HEAD c89eb3e (after fix) ===
+$ FM_HOME=<mate> <main>/bin/fm-bootstrap.sh | grep BACKLOG_RECONCILE
+(no BACKLOG_RECONCILE lines)
+--- mate from its own root:
+main backlog still intact:
+## Queued
+
+- [ ] main-1: main row

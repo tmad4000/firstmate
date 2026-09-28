@@ -1,0 +1,7 @@
+ok - bootstrap reports a regular code-root backlog and stays silent for a link into the home or no copy
+ok - bootstrap reports a code-root backlog linked elsewhere and a forked archive
+ok - bootstrap stays silent when the code root is the home
+not ok - a cross-home bootstrap reported the invoking checkout's own data files (unexpected: '/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-tasks-axi.5VLrf8/cross-home/main/data')
+--- output ---
+BACKLOG_RECONCILE: code-root /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-tasks-axi.5VLrf8/cross-home/main/data/backlog.md is not this home's /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-tasks-axi.5VLrf8/cross-home/mate/data/backlog.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+BACKLOG_RECONCILE: code-root /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-tasks-axi.5VLrf8/cross-home/main/data/done-archive.md is not this home's /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-tasks-axi.5VLrf8/cross-home/mate/data/done-archive.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
