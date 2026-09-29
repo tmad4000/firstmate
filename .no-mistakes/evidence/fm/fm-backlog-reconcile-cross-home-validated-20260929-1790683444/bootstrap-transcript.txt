@@ -1,0 +1,57 @@
+CASE: base-cross-home
+cwd=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main
+FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate FM_BOOTSTRAP_DETECT_ONLY=1 FM_BOOTSTRAP_NETWORK=skip bash /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/bin/fm-bootstrap.sh
+exit=0
+BACKLOG_RECONCILE: code-root /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/data/backlog.md is not this home's /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate/data/backlog.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+BACKLOG_RECONCILE: code-root /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/data/done-archive.md is not this home's /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate/data/done-archive.md; tasks-axi wrote the code root instead of this home, so rows in it may be missing here - merge it into this home's copy and move it aside
+
+CASE: target-cross-home
+cwd=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main
+FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate FM_BOOTSTRAP_DETECT_ONLY=1 FM_BOOTSTRAP_NETWORK=skip bash /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/bin/fm-bootstrap.sh
+exit=0
+(no BACKLOG_RECONCILE diagnostics)
+
+CASE: target-own-home
+cwd=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate
+FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate FM_BOOTSTRAP_DETECT_ONLY=1 FM_BOOTSTRAP_NETWORK=skip bash /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/mate/bin/fm-bootstrap.sh
+exit=0
+(no BACKLOG_RECONCILE diagnostics)
+
+CASE: target-separate-home
+cwd=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main
+FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/separate-home FM_BOOTSTRAP_DETECT_ONLY=1 FM_BOOTSTRAP_NETWORK=skip bash /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/bin/fm-bootstrap.sh
+exit=0
+BACKLOG_RECONCILE: code-root /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/data/backlog.md is not this home's /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/separate-home/data/backlog.md; a tasks-axi write may have landed there instead of this home, so rows may be missing here - this check cannot tell whether that file is another home's live record, so never move, rewrite, or delete it on this line alone; a matching task id alone is not ownership evidence; copy into /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/separate-home/data/backlog.md only rows corroborated as the same task by this home's records (state/<id>.* or data/<id>/ contents here) and whose id has no record in /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main; leave ambiguous rows untouched and report them to the captain, including every row both homes' records claim or neither home's records claim (queued rows may have no records yet); run every later backlog command through bin/fm-tasks-axi.sh
+BACKLOG_RECONCILE: code-root /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main/data/done-archive.md is not this home's /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/separate-home/data/done-archive.md; a tasks-axi write may have landed there instead of this home, so rows may be missing here - this check cannot tell whether that file is another home's live record, so never move, rewrite, or delete it on this line alone; a matching task id alone is not ownership evidence; copy into /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/separate-home/data/done-archive.md only rows corroborated as the same task by this home's records (state/<id>.* or data/<id>/ contents here) and whose id has no record in /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3PHBQ9WSC63QDE15S9TT34K/.bootstrap-verification-gr4kmnlt/main; leave ambiguous rows untouched and report them to the captain, including every row both homes' records claim or neither home's records claim (queued rows may have no records yet); run every later backlog command through bin/fm-tasks-axi.sh
+
+UNCHANGED sha256=7da5a5093f061cfca448b00cc3f4f2fa65350e335f99c6ef55c30e5a4f2e5d69 main/data/done-archive.md
+## Queued
+
+- [ ] main-1: main owned record
+
+UNCHANGED sha256=7da5a5093f061cfca448b00cc3f4f2fa65350e335f99c6ef55c30e5a4f2e5d69 main/data/backlog.md
+## Queued
+
+- [ ] main-1: main owned record
+
+UNCHANGED sha256=dd6361f6e08925b9755a521502091aa8f09b08af724815106060c422b435b15f mate/data/done-archive.md
+## Queued
+
+- [ ] mate-1: mate owned record
+
+UNCHANGED sha256=dd6361f6e08925b9755a521502091aa8f09b08af724815106060c422b435b15f mate/data/backlog.md
+## Queued
+
+- [ ] mate-1: mate owned record
+
+UNCHANGED sha256=2b93720b4baa77aefcb70a0c0929061f58cd56e1941dd9f3fa932180947068d7 separate-home/data/done-archive.md
+## Queued
+
+- [ ] separate-home-1: separate-home owned record
+
+UNCHANGED sha256=2b93720b4baa77aefcb70a0c0929061f58cd56e1941dd9f3fa932180947068d7 separate-home/data/backlog.md
+## Queued
+
+- [ ] separate-home-1: separate-home owned record
+
+All six backlog/archive files remain byte-identical. Temporary fixture homes removed after verification.
