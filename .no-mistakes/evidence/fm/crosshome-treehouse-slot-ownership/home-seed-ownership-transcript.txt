@@ -1,0 +1,74 @@
+Treehouse v2.1.0 seed control: same-slot reset; home published; durable lease retained
+Treehouse v2.1.0 seed record: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-record/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: task allocation's recorded worktree /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-record/pools/.treehouse/code-1daf31/1/code is also task old-task's recorded worktree.
+Returning that pool slot would kill old-task's processes and reset its copy, so nothing was changed - not even with --force.
+Reconcile whichever record is wrong (bin/fm-crew-state.sh allocation; bin/fm-crew-state.sh old-task), then re-run teardown.
+HEAD before=96a03cc50b7f363589631f0880f3ff8c16c06659 after=96a03cc50b7f363589631f0880f3ff8c16c06659
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-record/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-record/pools/.treehouse/code-1daf31/1/code",
+      "created_at": "2026-09-30T14:19:39.099851-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed claim: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-claim/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: pool slot /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-claim/pools/.treehouse/code-a38a8c/1/code retains an ownership claim at /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-claim/pools/.treehouse/code-a38a8c/1/.fm-slot-owner; run guarded teardown for its owner before allocating again.
+HEAD before=022047c1f11cf338ffb63ad1dd6b3289fde163e5 after=022047c1f11cf338ffb63ad1dd6b3289fde163e5
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-claim/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-claim/pools/.treehouse/code-a38a8c/1/code",
+      "created_at": "2026-09-30T14:19:39.902385-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed live-record: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-live-record/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: task allocation's recorded worktree /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-live-record/pools/.treehouse/code-5ac9b4/1/code is also task old-task's recorded worktree.
+Returning that pool slot would kill old-task's processes and reset its copy, so nothing was changed - not even with --force.
+Reconcile whichever record is wrong (bin/fm-crew-state.sh allocation; bin/fm-crew-state.sh old-task), then re-run teardown.
+HEAD before=4d24fac8c7d52883638f42587418f935fc88b78b after=4d24fac8c7d52883638f42587418f935fc88b78b
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-live-record/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-live-record/pools/.treehouse/code-5ac9b4/1/code",
+      "created_at": "2026-09-30T14:19:40.85206-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed contention: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-contention/home bin/fm-home-seed.sh new-home - --no-projects
+error: another Treehouse slot allocation or return is in progress for /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-contention/code; refusing to race it
+HEAD before=ad5ad7e198ff42107a288c6d4c68ecbdc3799f34 after=ad5ad7e198ff42107a288c6d4c68ecbdc3799f34
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-contention/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/real-seed-contention/pools/.treehouse/code-b62f27/1/code",
+      "created_at": "2026-09-30T14:19:42.024522-06:00"
+    }
+  ]
+}ok - real Treehouse home seeding honors shared locks and retained cross-home task ownership
+leased worktree for dash
+error: secondmate home cannot be inside the firstmate repo: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/dash-acquired-home
+REFUSED: unsafe treehouse-acquired home rollback target /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3SYN80ZPNDAAH5BAHXM3NY4/.test-phase-tmp/fm-secondmate-safety.I3STBi/dash-acquired-home is inside the firstmate repo
+not ok - seed failed for a treehouse-acquired home
