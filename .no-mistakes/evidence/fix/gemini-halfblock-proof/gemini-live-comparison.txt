@@ -1,0 +1,8 @@
+Existing endpoint default:w4:p6; native identity='gemini\tdone'
+Same live ANSI viewport: base=unknown; target=empty
+Same captured viewport, identity='gemini\tworking': unknown
+Same captured viewport, identity='gemini\tblocked': unknown
+Same captured viewport, identity='pi\tdone': unknown
+Same captured viewport, identity='probe-absent': unknown
+Same captured viewport with lower shell prompt: unknown
+Read-only capture and identity queries only; no input, lifecycle exit, task retirement, or cleanup performed.
