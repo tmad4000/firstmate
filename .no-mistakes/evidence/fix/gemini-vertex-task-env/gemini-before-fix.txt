@@ -1,0 +1,6 @@
+Pre-fix executable, emitted launch executed with empty allowlist; received ADC/project/location/Vertex:
+unset
+unset
+unset
+unset
+not ok - Gemini Vertex launch did not preserve its task environment

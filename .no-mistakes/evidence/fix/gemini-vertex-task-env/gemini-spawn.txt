@@ -1,0 +1,31 @@
+Gemini spawn with empty allowlist; executed worker receives:
+/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.SdXV6R/gemini-vertex-env/creds 'quoted' $(touch /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.SdXV6R/gemini-vertex-env/SHOULD_NOT_EXIST)
+sample-project
+us-central1
+true
+Gemini spawn without Vertex settings; stale pane values become:
+unset
+unset
+unset
+unset
+Codex spawn preserves its own pane environment:
+pane-adc
+pane-project
+pane-location
+false
+ok - Gemini Vertex settings survive the daemon and allowlist boundary without reaching other harnesses
+Gemini stored-login inputs (ambient policy), executed from project workdir:
+vertex=unset
+adc=unset
+api-key=
+stored-settings=readable
+cwd=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.SdXV6R/gemini-auth-ambient/wt
+Same launch with synthetic API key: key remains set; contents never emitted.
+Gemini stored-login inputs (allowlist policy), executed from project workdir:
+vertex=unset
+adc=unset
+api-key=
+stored-settings=readable
+cwd=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.SdXV6R/gemini-auth-allowlist/wt
+Same launch with synthetic API key: key remains set; contents never emitted.
+ok - Gemini clears stale Vertex selection while preserving API-key and stored-login inputs

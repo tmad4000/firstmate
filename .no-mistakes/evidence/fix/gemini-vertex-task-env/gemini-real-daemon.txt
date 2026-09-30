@@ -1,0 +1,10 @@
+Actual isolated tmux daemon started with stale Vertex environment.
+Firstmate generated the Gemini launch with an empty launch-env-allowlist.
+Executed worker in the project workdir receives:
+adc=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.JFnsKg/actual-daemon/readable-adc.json
+project=invoking-project
+location=us-central1
+vertex=true
+cwd=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-spawn-dispatch-profile.JFnsKg/actual-daemon/wt
+Daemon PID remained unchanged; no existing user daemon or worker was used.
+Probe replaces only Gemini CLI; this verifies launch delivery, not a live cloud request.

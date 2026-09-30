@@ -1,0 +1,14 @@
+Gemini replacement in existing pane with empty allowlist receives:
+adc=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-control-relaunch.Z5j7Jp/gemini-vertex-24873/adc-file
+project=current-project
+location=us-central1
+vertex=true
+cwd=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-control-relaunch.Z5j7Jp/gemini-vertex-24873/wt
+Next Gemini replacement clears removed settings and preserves explicit empty ADC:
+adc=
+project=unset
+location=unset
+vertex=unset
+cwd=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-control-relaunch.Z5j7Jp/gemini-vertex-24873/wt
+Active Gemini worker: relaunch refused; task record and pane command stream unchanged.
+ok - Gemini relaunch refreshes task Vertex settings without touching an active worker or daemon
