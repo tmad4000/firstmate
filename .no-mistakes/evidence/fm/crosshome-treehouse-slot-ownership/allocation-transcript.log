@@ -1,0 +1,12 @@
+Treehouse v2.1.0 control: in-use -> available -> same-slot reset
+Treehouse v2.1.0 record: cross-home refusal before process exit; HEAD and reflog preserved; retry refused
+Treehouse v2.1.0 claim: cross-home refusal before process exit; HEAD and reflog preserved; retry refused
+ok - real Treehouse process-exit allocation preserves retained cross-home task work
+# remote-seeded Treehouse spawn command
+$ FM_HOME=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RZ0KQYM1P584TQJ0YCPFMX/.test-tmp/fm-spawn-pool-base-freshen.qkgOD4/remote-seeded/home bin/fm-spawn.sh pool-remote-seeded-r13 /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RZ0KQYM1P584TQJ0YCPFMX/.test-tmp/fm-spawn-pool-base-freshen.qkgOD4/remote-seeded/project --scout
+spawned pool-remote-seeded-r13 harness=codex kind=scout window=firstmate:fm-pool-remote-seeded-r13 worktree=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RZ0KQYM1P584TQJ0YCPFMX/.test-tmp/fm-spawn-pool-base-freshen.qkgOD4/remote-seeded/pool
+exit=0
+published worktree=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RZ0KQYM1P584TQJ0YCPFMX/.test-tmp/fm-spawn-pool-base-freshen.qkgOD4/remote-seeded/pool
+resolved project lock=/Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RZ0KQYM1P584TQJ0YCPFMX/.test-tmp/fm-spawn-pool-base-freshen.qkgOD4/remote-seeded/home/state/.treehouse-project-f457a0a8ccb15cd5072a1d65febd1a427346276f.lock
+ok - a remote-seeded secondmate home allocates and launches from its Treehouse pool
+ok - a Treehouse slot claim names the launched task, refuses when unclaimable, and is dropped by a locked abort
