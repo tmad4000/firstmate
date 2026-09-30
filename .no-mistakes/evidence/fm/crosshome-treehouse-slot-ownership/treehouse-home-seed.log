@@ -1,0 +1,10 @@
+Treehouse v2.1.0 seed control: same-slot reset; home published; durable lease retained
+Treehouse v2.1.0 seed record: refused; HEAD, reflog, pool state and registry preserved
+Treehouse v2.1.0 seed claim: refused; HEAD, reflog, pool state and registry preserved
+Treehouse v2.1.0 seed live-record: refused; HEAD, reflog, pool state and registry preserved
+Treehouse v2.1.0 seed contention: refused; HEAD, reflog, pool state and registry preserved
+ok - real Treehouse home seeding honors shared locks and retained cross-home task ownership
+leased worktree for dash
+error: secondmate home cannot be inside the firstmate repo: /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RTB6Z19PPNF8XH28T8D6QF/.test-phase-tmp/fm-secondmate-safety.tE66Fn/dash-acquired-home
+REFUSED: unsafe treehouse-acquired home rollback target /Users/jacob/.no-mistakes/worktrees/4551e25b70c8/01M3RTB6Z19PPNF8XH28T8D6QF/.test-phase-tmp/fm-secondmate-safety.tE66Fn/dash-acquired-home is inside the firstmate repo
+not ok - seed failed for a treehouse-acquired home

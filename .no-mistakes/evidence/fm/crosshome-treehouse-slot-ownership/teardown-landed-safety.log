@@ -1,0 +1,104 @@
+ok - local-only worktree with truly unpushed work is refused (safety preserved)
+ok - local-only worktree with work merged into local main is torn down (no regression)
+ok - no-mistakes worktree with HEAD on origin is torn down (no regression)
+ok - no-mistakes worktree with genuinely unlanded work is refused (safety preserved)
+ok - dirty worktree is refused even when its committed work has landed (dirty always wins)
+
+# operator teardown scenario: truly-unpushed
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 1s ago).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFUSED: local-only worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/truly-unpushed/wt has work not yet merged into main and not on any remote.
+commits not yet on main:
+7a3b8a2 unpushed work
+Merge the branch into local main first (bin/fm-merge-local.sh after the captain approves), or push to a fork/remote, or get the captain's explicit OK to discard, then --force.
+retained task record:
+window=firstmate:fm-task-x1
+endpoint_task_id=task-x1
+worktree=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/truly-unpushed/wt
+project=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/truly-unpushed/project
+kind=ship
+mode=local-only
+spawn_gen=teardown-test-task-x1
+retained HEAD=7a3b8a29a9f58b6d26000b5976642b0b94c1a73a
+retained working-copy state:
+
+# operator teardown scenario: merged-main
+teardown task-x1 complete (window firstmate:fm-task-x1, worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/merged-main/wt)
+Backlog: task-x1 just finished (this home keeps no markdown backlog at /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/merged-main/data/backlog.md). Update /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/merged-main/data/backlog.md - move task-x1 to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 1s ago).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+finished task record removed
+
+# operator teardown scenario: nm-origin
+/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-origin/project: already current
+teardown task-x1 complete (window firstmate:fm-task-x1, worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-origin/wt)
+Backlog: task-x1 just finished (this home keeps no markdown backlog at /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-origin/data/backlog.md). Update /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-origin/data/backlog.md - move task-x1 to Done, keep Done to the 10 most recent, then re-scan Queued and dispatch only work whose blockers are gone and date is due.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 0s ago).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+finished task record removed
+
+# operator teardown scenario: nm-unpushed
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 0s ago).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFUSED: worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-unpushed/wt has work not on any remote and not landed.
+unpushed commits:
+223eb42 unpushed work
+Push the branch, land its PR, or get the captain's explicit OK to discard, then --force.
+retained task record:
+window=firstmate:fm-task-x1
+endpoint_task_id=task-x1
+worktree=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-unpushed/wt
+project=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/nm-unpushed/project
+kind=ship
+mode=no-mistakes
+spawn_gen=teardown-test-task-x1
+retained HEAD=223eb4250f9812eded64556e67ebea25c5e62e26
+retained working-copy state:
+retained feature content:
+hello
+
+# operator teardown scenario: dirty-wt
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no live watcher process holds this home lock (last beat: 0s ago).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFUSED: worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/dirty-wt/wt has uncommitted changes.
+uncommitted changes present
+Commit them (or get the captain's explicit OK to discard, then --force).
+retained task record:
+window=firstmate:fm-task-x1
+endpoint_task_id=task-x1
+worktree=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/dirty-wt/wt
+project=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-teardown-tests.z6n5Rd/dirty-wt/project
+kind=ship
+mode=no-mistakes
+spawn_gen=teardown-test-task-x1
+pr=https://github.com/example/repo/pull/7
+retained HEAD=9fb8e601846c7caa34d625058b6b778c8efae957
+retained working-copy state:
+ M feature.txt
+retained feature content:
+uncommitted edit
