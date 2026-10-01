@@ -1,0 +1,9 @@
+ok - Gemini 0.62.0: CLI graph resolved core exports
+not ok - Gemini 0.62.0: AssertionError [ERR_ASSERTION]: generated launch environment
++ actual - expected
+
++ undefined
+- 'child_process'
+
+    at file:///private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-gemini-shell-live.uaN1Np/driver.mjs:47:10
+not ok - installed Gemini shell consumer verification failed: expected exit 0, got 1

@@ -1,0 +1,25 @@
+ok - Gemini 0.62.0: CLI graph resolved core exports
+shell command 1: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+shell command 2: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+shell command 3: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+shell command 4: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+shell command 5: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+shell command 6: printf fm-shell-ok; exit=0; output=fm-shell-ok; method=child_process; masters=0
+ok - Gemini 0.62.0: launch override wins; 6 child_process commands; ptmx 0->0
+native control 1: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=1
+native control 2: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=2
+native control 3: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=3
+native control 4: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=4
+native control 5: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=5
+native control 6: exit=0; output=fm-native-ok; method=lydell-node-pty; master_descriptors=6
+Native control retained descriptor details:
+COMMAND   PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+node    97059 jacob   14u   CHR 15,136      0t0  605 /dev/ptmx
+node    97059 jacob   15u   CHR 15,137      0t0  605 /dev/ptmx
+node    97059 jacob   18u   CHR 15,138      0t0  605 /dev/ptmx
+node    97059 jacob   20u   CHR 15,139      0t0  605 /dev/ptmx
+node    97059 jacob   24u   CHR 15,140      0t0  605 /dev/ptmx
+node    97059 jacob   27u   CHR 15,141      0t0  605 /dev/ptmx
+
+native control: descriptors=6; distinct PTY devices=6; remaining command children=0
+native control masters 0->6
