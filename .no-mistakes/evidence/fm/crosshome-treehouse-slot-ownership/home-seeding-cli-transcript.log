@@ -1,0 +1,75 @@
+Treehouse v2.1.0 seed control: same-slot reset; home published; durable lease retained
+Treehouse v2.1.0 seed record: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-record/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: task allocation's recorded worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-record/pools/.treehouse/code-b0df64/1/code is also task old-task's recorded worktree.
+Returning that pool slot would kill old-task's processes and reset its copy, so nothing was changed - not even with --force.
+Reconcile whichever record is wrong (bin/fm-crew-state.sh allocation; bin/fm-crew-state.sh old-task), then re-run teardown.
+HEAD before=c691135410248d03635eb25fc3331f29ab7dd89f after=c691135410248d03635eb25fc3331f29ab7dd89f
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-record/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-record/pools/.treehouse/code-b0df64/1/code",
+      "created_at": "2026-10-01T20:47:07.682525-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed claim: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-claim/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: pool slot /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-claim/pools/.treehouse/code-0f85c5/1/code retains an ownership claim at /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-claim/pools/.treehouse/code-0f85c5/1/.fm-slot-owner; run guarded teardown for its owner before allocating again.
+HEAD before=b03c0e5ab740c3b356c85c6e851d2618aacae683 after=b03c0e5ab740c3b356c85c6e851d2618aacae683
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-claim/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-claim/pools/.treehouse/code-0f85c5/1/code",
+      "created_at": "2026-10-01T20:47:08.792405-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed live-record: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-live-record/home bin/fm-home-seed.sh new-home - --no-projects
+REFUSED: task allocation's recorded worktree /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-live-record/pools/.treehouse/code-771aca/1/code is also task old-task's recorded worktree.
+Returning that pool slot would kill old-task's processes and reset its copy, so nothing was changed - not even with --force.
+Reconcile whichever record is wrong (bin/fm-crew-state.sh allocation; bin/fm-crew-state.sh old-task), then re-run teardown.
+HEAD before=fc63a1a08d822c5d9082a95916cff6c305fe91e2 after=fc63a1a08d822c5d9082a95916cff6c305fe91e2
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-live-record/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-live-record/pools/.treehouse/code-771aca/1/code",
+      "created_at": "2026-10-01T20:47:09.76318-06:00"
+    }
+  ]
+}Treehouse v2.1.0 seed contention: refused; HEAD, reflog, pool state and registry preserved
+$ FM_HOME=/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-contention/home bin/fm-home-seed.sh new-home - --no-projects
+error: another Treehouse slot allocation or return is in progress for /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-contention/code; refusing to race it
+HEAD before=f113ec3faf04c6a87c7623a5548298ac5bb3b02a after=f113ec3faf04c6a87c7623a5548298ac5bb3b02a
+preserved task output: retained detached task work
+preserved home registry:
+- oldmate - fixture (home: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-contention/owner-home; scope: test; projects: ; added 2026-01-01)
+preserved Treehouse allocation state:
+{
+  "worktrees": [
+    {
+      "name": "1",
+      "path": "/private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-secondmate-safety.K6EaOj/real-seed-contention/pools/.treehouse/code-f93d21/1/code",
+      "created_at": "2026-10-01T20:47:11.230633-06:00"
+    }
+  ]
+}ok - real Treehouse home seeding honors shared locks and retained cross-home task ownership
+leased worktree for dash
+ok - home seeding durably leases treehouse-acquired dash homes under the secondmate id
+ok - home seeding returns rejected acquired homes through treehouse
+ok - home seed rollback warns when treehouse-acquired return fails
+ok - home seeding leaves unsafe acquired active homes untouched

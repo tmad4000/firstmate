@@ -1,0 +1,4 @@
+not ok - relaunch did not explain ownership refusal (successor-claim) (missing: 'REFUSED:')
+--- output ---
+warning: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-control-relaunch.hqzLHS/pool-successor-claim-1849/home/data/pool-relaunch-r1/launch-brief.md records no ship branch; defaulting to legacy branch fm/pool-relaunch-r1
+warning: /private/var/folders/7w/cfzyk2q1135bh_qr4jsm7ft40000gp/T/fm-control-relaunch.hqzLHS/pool-successor-claim-1849/home/data/pool-relaunch-r1/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
